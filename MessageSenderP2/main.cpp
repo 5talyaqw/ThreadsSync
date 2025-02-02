@@ -7,6 +7,10 @@ int main()
 
     try
     {
+        std::thread adminFileThread(&MessageSender::readAdminFile, &messageSender);
+        adminFileThread.detach();
+
+
         messageSender.showMenu();
 
     }

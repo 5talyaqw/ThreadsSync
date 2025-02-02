@@ -101,3 +101,39 @@ void MessageSender::showConnectedUsers()
 		std::cout << *it << "\n";
 	}
 }
+
+void MessageSender::readAdminFile()
+{
+	const std::string filePath = "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\data.txt";
+	while (true)
+	{
+		std::this_thread::sleep_for(std::chrono::seconds(60));  // Wait for 60 seconds
+		
+		//opening file
+		std::ifstream file(filePath);
+		if (file.is_open())
+		{
+			std::string line;
+			
+			//read the file line by line
+			while (std::getline(file, line))
+			{
+				if (!line.empty()) // avoid pushing empty lines
+				{
+					messagesQueue.push(line);
+				}
+			}
+
+			//clearing the content of the file after reading it
+			file.close();
+
+			//clearing the file content by opening it in write mode
+			std::ofstream outputFile(filePath, std::ofstream::trunc);
+			outputFile.close();
+		}
+		else
+		{
+			std::cerr << "Error: Unable to open file " << filePath << "\n";
+		}
+	}
+}

@@ -1,5 +1,6 @@
 #include "threads.h"
 
+//global variable for file mtx
 std::mutex filemtx;
 
 /*function checking if number is prime
@@ -53,4 +54,34 @@ void writePrimesToFile(int begin, int end, std::ofstream& file)
 
 void callWritePrimesMultipleThreads(int begin, int end, std::string filePath, int N)
 {
+	//opening file
+	std::ofstream file(filePath);
+	//making sure its open
+	if (!file.is_open())
+	{
+		std::cerr << "Error opening file: " << filePath << std::endl;
+		return;
+	}
+
+	//vector of threads
+	std::vector<std::thread> threads;
+	int range = (end - begin + 1) / N;
+	int start = begin;
+
+	//creating threads
+	for (int i = 0; i < N; i++)
+	{
+		int stop = (i == N - 1) ? end : (start + range - 1);
+		threads.push_back(std::thread(writePrimesToFile, start, stop, std::ref(file)));
+		start = stop + 1;
+	}
+
+	//ensuring each thread completes execution b4 continue
+	for (int i = 0; i < threads.size(); i++)
+	{
+		threads[i].join();
+	}
+
+	//closing file
+	file.close();
 }

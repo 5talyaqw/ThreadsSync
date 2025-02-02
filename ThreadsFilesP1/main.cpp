@@ -16,9 +16,9 @@ int main()
         return 1;
     }
 
-    writePrimesToFile(begin, end, file);
-    //callWritePrimesMultipleThreads(begin, end, filePath, N);
+    //writePrimesToFile(begin, end, file);
+    callWritePrimesMultipleThreads(begin, end, filePath, N);
 
-    //std::cout << "Finished writing primes to file: " << filePath << std::endl;
+    std::cout << "Finished writing primes to file: " << filePath << std::endl;
     return 0;
 }

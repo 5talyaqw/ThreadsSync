@@ -21,6 +21,9 @@ public:
     //part B methods
     void readAdminFile();
 
+    //part C methods
+    void writeMessagesToUsersFile();
+
 private:
     std::set<std::string> connectedUsers; //queue to users
     std::queue<std::string> messagesQueue;

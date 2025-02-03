@@ -37,3 +37,92 @@ T : or a watch to take out of it, and,
 T : burning with curiosity, she ran across the field
 T : after it, and was just in time to see it pop
 T : down a large rabbit-hole under the hedge.
+1 : ALICE was beginning to get very tired of
+T : ALICE was beginning to get very tired of
+1 : sitting by her sister on the bank, and of having
+T : sitting by her sister on the bank, and of having
+1 : nothing to do: once or twice she had peeped into
+T : nothing to do: once or twice she had peeped into
+1 : the book her sister was reading, but it had no
+T : the book her sister was reading, but it had no
+1 : pictures or conversations in it, “ and what is
+T : pictures or conversations in it, “ and what is
+1 : the use of a book,” thought Alice, “ without
+T : the use of a book,” thought Alice, “ without
+1 : pictures or conversations ?”
+T : pictures or conversations ?”
+1 : So she was considering in her own mind,
+T : So she was considering in her own mind,
+1 : (as well as she could, for the hot day made
+T : (as well as she could, for the hot day made
+1 : her feel very sleepy and stupid,) whether the
+T : her feel very sleepy and stupid,) whether the
+1 : pleasure of making a daisy-chain would be
+T : pleasure of making a daisy-chain would be
+1 : worth the trouble of getting up and picking
+T : worth the trouble of getting up and picking
+1 : the daisies, when suddenly a white rabbit with
+T : the daisies, when suddenly a white rabbit with
+1 : pink eyes ran close by her.
+T : pink eyes ran close by her.
+1 : There was nothing so very remarkable in
+T : There was nothing so very remarkable in
+1 : that; nor did Alice think it so very much out
+T : that; nor did Alice think it so very much out
+1 : of the way to hear the Rabbit say to itself,
+T : of the way to hear the Rabbit say to itself,
+1 : “ Oh dear ! Oh dear ! I shall be too late !”
+T : “ Oh dear ! Oh dear ! I shall be too late !”
+1 : (when she thought it over afterwards, it occurred
+T : (when she thought it over afterwards, it occurred
+1 : to her that she ought to have wondered
+T : to her that she ought to have wondered
+1 : at this, but at the time it all seemed quite
+T : at this, but at the time it all seemed quite
+1 : natural); but when the Rabbit actually took a
+T : natural); but when the Rabbit actually took a
+1 : watch out of its waistcoat-pocket, and looked at
+T : watch out of its waistcoat-pocket, and looked at
+1 : it, and then hurried on, Alice started to her
+T : it, and then hurried on, Alice started to her
+1 : feet, for it flashed across her mind that she had
+T : feet, for it flashed across her mind that she had
+1 : never before seen a rabbit with either a waistcoat-pocket
+T : never before seen a rabbit with either a waistcoat-pocket
+1 : or a watch to take out of it, and,
+T : or a watch to take out of it, and,
+1 : burning with curiosity, she ran across the field
+T : burning with curiosity, she ran across the field
+1 : after it, and was just in time to see it pop
+T : after it, and was just in time to see it pop
+1 : down a large rabbit-hole under the hedge.
+T : down a large rabbit-hole under the hedge.
+T : sitting by her sister on the bank, and of having
+T : nothing to do: once or twice she had peeped into
+T : the book her sister was reading, but it had no
+T : pictures or conversations in it, “ and what is
+T : the use of a book,” thought Alice, “ without
+T : pictures or conversations ?”
+T : So she was considering in her own mind,
+T : (as well as she could, for the hot day made
+T : her feel very sleepy and stupid,) whether the
+T : pleasure of making a daisy-chain would be
+T : worth the trouble of getting up and picking
+T : the daisies, when suddenly a white rabbit with
+T : pink eyes ran close by her.
+T : There was nothing so very remarkable in
+T : that; nor did Alice think it so very much out
+T : of the way to hear the Rabbit say to itself,
+T : “ Oh dear ! Oh dear ! I shall be too late !”
+T : (when she thought it over afterwards, it occurred
+T : to her that she ought to have wondered
+T : at this, but at the time it all seemed quite
+T : natural); but when the Rabbit actually took a
+T : watch out of its waistcoat-pocket, and looked at
+T : it, and then hurried on, Alice started to her
+T : feet, for it flashed across her mind that she had
+T : never before seen a rabbit with either a waistcoat-pocket
+T : or a watch to take out of it, and,
+T : burning with curiosity, she ran across the field
+T : after it, and was just in time to see it pop
+T : down a large rabbit-hole under the hedge.

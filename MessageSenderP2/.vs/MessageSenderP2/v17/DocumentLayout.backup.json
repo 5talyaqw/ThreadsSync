@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DF1A2F2B-E3DE-4DAF-98A5-38F4C171C013}|MessageSenderP2.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF1A2F2B-E3DE-4DAF-98A5-38F4C171C013}|MessageSenderP2.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DF1A2F2B-E3DE-4DAF-98A5-38F4C171C013}|MessageSenderP2.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\MessageSender.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DF1A2F2B-E3DE-4DAF-98A5-38F4C171C013}|MessageSenderP2.vcxproj|solutionrelative:MessageSender.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF1A2F2B-E3DE-4DAF-98A5-38F4C171C013}|MessageSenderP2.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\MessageSender.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DF1A2F2B-E3DE-4DAF-98A5-38F4C171C013}|MessageSenderP2.vcxproj|solutionrelative:MessageSender.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF1A2F2B-E3DE-4DAF-98A5-38F4C171C013}|MessageSenderP2.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF1A2F2B-E3DE-4DAF-98A5-38F4C171C013}|MessageSenderP2.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-03T16:23:01.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MessageSender.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\MessageSender.h",
               "RelativeDocumentMoniker": "MessageSender.h",
               "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\MessageSender.h",
               "RelativeToolTip": "MessageSender.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwCEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-02T14:53:42.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MessageSender.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\MessageSender.cpp",
               "RelativeDocumentMoniker": "MessageSender.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\MessageSenderP2\\MessageSender.cpp",
               "RelativeToolTip": "MessageSender.cpp",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAH0AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-02T14:53:17.432Z",
               "EditorCaption": ""

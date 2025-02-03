@@ -30,6 +30,8 @@ void MessageSender::showMenu()
 		throw std::invalid_argument("Not valid option!");
 		break;
 	}
+	readAdminFile();
+	writeMessagesToUsersFile();
 }
 
 
@@ -46,6 +48,9 @@ void MessageSender::signIn()
 	{
 		throw std::invalid_argument("Username cannnot be empty!");
 	}
+
+	// Lock the mutex before modifying connectedUsers set
+	std::lock_guard<std::mutex> lock(connectedUsersMtx);
 
 	//check if username already exists
 	if (connectedUsers.find(userName) != connectedUsers.end())
@@ -67,6 +72,9 @@ void MessageSender::signOut()
 	std::cout << "Enter username to sign out: ";
 	std::cin >> userName;
 
+	// Lock the mutex before modifying connectedUsers set
+	std::lock_guard<std::mutex> lock(connectedUsersMtx);
+
 	//trying to find the username in the set
 	auto it = connectedUsers.find(userName);
 	if (it == connectedUsers.end())
@@ -85,6 +93,9 @@ void MessageSender::signOut()
 */
 void MessageSender::showConnectedUsers()
 {
+	// Lock the mutex before reading from connectedUsers set
+	std::lock_guard<std::mutex> lock(connectedUsersMtx);
+
 	//checks if its empty
 	if (connectedUsers.empty())
 	{
@@ -103,7 +114,7 @@ void MessageSender::showConnectedUsers()
 void MessageSender::readAdminFile()
 {
 	const std::string filePath = "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\data.txt";
-	std::this_thread::sleep_for(std::chrono::seconds(60));  // Wait for 60 seconds
+	std::this_thread::sleep_for(std::chrono::seconds(1));  // Wait for 60 seconds
 		
 	//opening file
 	std::ifstream file(filePath);
@@ -116,12 +127,16 @@ void MessageSender::readAdminFile()
 		{
 			if (!line.empty()) // avoid pushing empty lines
 			{
+				// Lock the mutex before modifying messagesQueue
+				std::lock_guard<std::mutex> lock(messagesQueueMtx);
+
 				messagesQueue.push(line);
+				// Notify the condition variable that a new message is available
+				messagesCV.notify_one();
 			}
 		}
-		std::ofstream file;
-		file.open(filePath, std::ofstream::out | std::ofstream::trunc);
 		file.close();
+		std::ofstream clearFile(filePath, std::ofstream::out | std::ofstream::trunc);
 		std::cout << "done copying each line.\n";
 	}
 	else
@@ -132,6 +147,11 @@ void MessageSender::readAdminFile()
 
 void MessageSender::writeMessagesToUsersFile()
 {
+	// Lock the mutex before accessing the message queue
+	std::unique_lock<std::mutex> lock(messagesQueueMtx);
+
+	//waiting untill there is messages in queue
+	messagesCV.wait(lock, [this] { return !messagesQueue.empty(); });
 	const std::string filePath = "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\ThreadsSync\\output (1).txt";
 	std::ofstream outputFile(filePath, std::ios::app); // Open file in append mode
 	if (!outputFile)
@@ -145,6 +165,9 @@ void MessageSender::writeMessagesToUsersFile()
 	{
 		std::string message = messagesQueue.front(); // Get the next message
 		messagesQueue.pop(); // Remove it from the queue
+
+		// Lock the mutex before accessing the connectedUsers set
+		std::lock_guard<std::mutex> userLock(connectedUsersMtx);
 
 		// Iterate over the connected users and write the message for each
 		for (auto it = connectedUsers.begin(); it != connectedUsers.end(); ++it)
